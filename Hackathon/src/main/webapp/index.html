@@ -1,0 +1,28 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko" ng-app="App">
+<head>
+<title>Cross-Browser QRCode generator for Javascript</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/util.js"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen"></link>
+<link href="css/vendor/bootstrap.min.css" rel="stylesheet"></link>
+<link href="css/flat-ui.min.css" rel="stylesheet"></link>
+<link rel="stylesheet" href="css/main.css"></link>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+<body ng-controller="Controller">
+ <div class="form-group">
+    <div class="col-sm-offset-220col-sm-8"> 
+      <h3><center>Testar leds</center></h3>
+    </div>  
+  </div>
+        <button type="button" id="0" ng-click="EnviaComando(2);" class="btn btn-circle btn-success">L</button>
+        <button type="button" id="1" ng-click="EnviaComando(3);" class="btn btn-circle btn-warning">E</button>
+        <button type="button" id="2" ng-click="EnviaComando(4);" class="btn btn-circle btn-danger">D</button>
+        <button type="button" id="3" ng-click="EnviaComando(5);" class="btn btn-circle btn-info">S</button>
+  </div>
+</body>
